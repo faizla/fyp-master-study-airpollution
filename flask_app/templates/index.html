@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Deployment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<style>
+    .card-text {
+        font-size: 13px;
+
+    }
+</style>
+
+<body>
+    <div class="container text-center mt-3">
+        <form method="POST" id="air_pollution_submit">
+            <div class="row g-3">
+
+                <div class="col-3">
+                    <div class="p-3 border bg-light">Day 1
+                        <input type="number" name="ws_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Speed" value="0.8107">
+                        <input type="number" name="wd_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Direction" value="179.2917">
+                        <input type="number" name="temp_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Temperature" value="27.5274">
+                        <input type="number" name="rh_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Relative Humidity" value="86.2811">
+                        <input type="number" name="no_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitric Oxide (NO)" value="0.0082">
+                        <input type="number" name="so2_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Sulphur Dioxide (SO2)" value="0.0012">
+                        <input type="number" name="no2_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitrogen Dioxide (NO2)" value="0.0199">
+                        <input type="number" name="o3_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Ground-level Ozone (O3)" value="0.0159">
+                        <input type="number" name="co_1" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Carbon Monoxide (CO)" value="0.8996">
+                        <input type="number" name="pm10_1" step="any" class="form-control form-control-sm"
+                            placeholder="Particulate Matter 10 (PM10)" value="34.3774">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border bg-light">Day 2
+                        <input type="number" name="ws_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Speed" value="1.1680">
+                        <input type="number" name="wd_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Direction" value="162.0000">
+                        <input type="number" name="temp_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Temperature" value="27.1210">
+                        <input type="number" name="rh_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Relative Humidity" value="87.1327">
+                        <input type="number" name="no_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitric Oxide (NO)" value="0.0063">
+                        <input type="number" name="so2_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Sulphur Dioxide (SO2)" value="0.0011">
+                        <input type="number" name="no2_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitrogen Dioxide (NO2)" value="0.0184">
+                        <input type="number" name="o3_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Ground-level Ozone (O3)" value="0.0133">
+                        <input type="number" name="co_2" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Carbon Monoxide (CO)" value="0.8214">
+                        <input type="number" name="pm10_2" step="any" class="form-control form-control-sm"
+                            placeholder="Particulate Matter 10 (PM10)" value="23.4586">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border bg-light">Day 3
+                        <input type="number" name="ws_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Speed" value="1.2642">
+                        <input type="number" name="wd_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Direction" value="138.1250">
+                        <input type="number" name="temp_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Temperature" value="27.5433">
+                        <input type="number" name="rh_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Relative Humidity" value="84.2922">
+                        <input type="number" name="no_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitric Oxide (NO)" value="0.0121">
+                        <input type="number" name="so2_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Sulphur Dioxide (SO2)" value="0.0014">
+                        <input type="number" name="no2_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitrogen Dioxide (NO2)" value="0.0233">
+                        <input type="number" name="o3_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Ground-level Ozone (O3)" value="0.0135">
+                        <input type="number" name="co_3" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Carbon Monoxide (CO)" value="1.0505">
+                        <input type="number" name="pm10_3" step="any" class="form-control form-control-sm"
+                            placeholder="Particulate Matter 10 (PM10)" value="26.0311">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border bg-light">Day 4
+                        <input type="number" name="ws_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Speed" value="1.2180">
+                        <input type="number" name="wd_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Wind Direction" value="158.1667">
+                        <input type="number" name="temp_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Temperature" value="27.5748">
+                        <input type="number" name="rh_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Relative Humidity" value="83.7281">
+                        <input type="number" name="no_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitric Oxide (NO)" value="0.0136">
+                        <input type="number" name="so2_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Sulphur Dioxide (SO2)" value="0.0014">
+                        <input type="number" name="no2_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Nitrogen Dioxide (NO2)" value="0.0203">
+                        <input type="number" name="o3_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Ground-level Ozone (O3)" value="0.0151">
+                        <input type="number" name="co_4" step="any" class="form-control form-control-sm mb-2"
+                            placeholder="Carbon Monoxide (CO)" value="1.0570">
+                        <input type="number" name="pm10_4" step="any" class="form-control form-control-sm"
+                            placeholder="Particulate Matter 10 (PM10)" value="36.1911">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-grid col-6 mx-auto">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="p-3 border bg-light">
+                        Predicted Air Pollution for One Day Ahead
+                        <div class="row mt-3" id="predicted_value">
+
+                            {% for item in data %}
+                            <div class="col">
+                                <div class="card">
+                                    <div class=" card-header">
+                                        <p class="card-text">{{item.pollution}}</p>
+                                    </div>
+                                    <div class="card-body">
+                                        {{item.value}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- <script type="text/javascript">
+        $(document).on('submit', '#air_pollution_submit', function (e) {
+            console.log('hello');
+            e.preventDefault();
+        });
+    </script> -->
+</body>
+
+</html>
